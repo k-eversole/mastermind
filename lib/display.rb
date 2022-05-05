@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'colorize'
-
 # Display text for the player
 module Display
   def welcome
@@ -34,13 +32,13 @@ module Display
       'ask_input' => 'Enter your guess.',
       'code_set' => 'The code is set. The computer is thinking...',
       'restart' => 'Would you like to play again? Y/N',
-      'restart_role' => "Do you want to be the #{'Code Maker'.light_green}(1) " \
+      'restart_role' => "\n\nDo you want to be the #{'Code Maker'.light_green}(1) " \
         "or the #{'Code Breaker'.light_green}(2)?",
       'player_won' => "\n\nYou won! Congratulations!".light_green,
       'player_lost' => "\n\nYou lost. Better luck next time...".light_green,
       'computer_won' => "\n\nThe computer won!".light_green,
       'computer_lost' => "\n\nThe computer lost. Better luck next time, Skynet.".light_green,
-      'end' => 'Thanks for playing!'
+      'end' => "\n\nThanks for playing!"
     }[message]
   end
 

@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require_relative 'game'
-require_relative 'game_logic'
-require_relative 'display'
-
 # Logic needed for a human player
 class Player
   include Display
